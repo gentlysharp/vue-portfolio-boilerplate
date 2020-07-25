@@ -1,11 +1,11 @@
-<template>
-  <v-content class="pt-10">
+ <template>
+  <v-content>
     <router-view />
   </v-content>
 </template>
 
 <script>
 export default {
-  name: "CoreView"
+  name: "CoreView",
 };
 </script>

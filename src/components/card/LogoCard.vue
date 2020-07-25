@@ -1,6 +1,10 @@
 <template>
   <v-card @click="initTab" to="/">
-    <v-img class="d-none d-sm-none d-md-flex logo" max-height="100%" src></v-img>
+    <v-img
+      class="d-none d-sm-none d-md-flex logo"
+      max-height="100%"
+      src
+    ></v-img>
   </v-card>
 </template>
 
@@ -11,9 +15,9 @@ export default {
     initTab() {
       // header-bar에서 tabs의 값이 number를 기준으로 이동하기 때문에
       // 홈 로고를 클릭하면 tab을 초기화 한다.
-      this.$eventBus.$emit("initTab", 0);
-    }
-  }
+      // this.$eventBus.$emit("initTab", 0);
+    },
+  },
 };
 </script>
 

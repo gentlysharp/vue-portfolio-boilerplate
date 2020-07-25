@@ -8,12 +8,13 @@ import './plugins/axios'
 import './plugins/moment'
 import './plugins/aos'
 
-import './events/EventBus'
+import store from './stores'
 
 
 Vue.config.productionTip = false
 
 new Vue({
+  store,
   vuetify,
   i18n,
   router,
